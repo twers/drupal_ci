@@ -1,4 +1,4 @@
-name = Home View Feature
+name = Home View Feature 
 description = desc of home view feature
 core = 7.x
 package = Features
