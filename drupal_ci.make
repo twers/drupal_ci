@@ -21,3 +21,5 @@ projects[home_view_feature][version] = "1.0"
 
 projects[views][version] = "3.5"
 
+projects[ckeditor][version] = ""
+
