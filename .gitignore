@@ -6,4 +6,4 @@ sites/*/files
 sites/*/private
 sites/all/modules/*
 !custom
-.DS_Store
+.DS_Store 
