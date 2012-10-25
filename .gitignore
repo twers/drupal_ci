@@ -5,5 +5,5 @@
 sites/*/files
 sites/*/private
 sites/all/modules/*
-sites/all/modules/!custom/
+!custom
 .DS_Store
