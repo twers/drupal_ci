@@ -200,21 +200,15 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => 'drupal_ci',
-      'username' => 'root',
-      'password' => '',
-      'host' => '127.0.0.1',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
+$databases['default']['default'] = array(
+  'driver' => 'mysql',
+  'database' => 'drupal_ci',
+  'username' => 'root',
+  'password' => '',
+  'host' => '127.0.0.1',
+  'prefix' => '',
 );
+
 
 /**
  * Access control for update.php script.
@@ -524,3 +518,9 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+$conf['install_profile'] = 'profiles/drupal_ci/drupal_ci.profile';
+
+$conf['install_profile'] = 'profiles/drupal_ci/drupal_ci.profile';
+
+$conf['install_profile'] = 'drupal_ci';
