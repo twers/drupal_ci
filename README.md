@@ -22,11 +22,18 @@ We don't need to open the website for installation anymore. It's perfectly insta
 ```
 drush si drupal_ci -y --account-name=yourname --account-pass=password
 ```
-###Step4 : Done
+###Step4 : done
 visit your site in browser
 
 ```
 open http://localhost/drupal_ci
+```
+
+###Automatical installation is ready!!
+Just run after pulling the code **(Step1)**
+
+```
+./autoinstall.sh
 ```
 
 ##Tips
