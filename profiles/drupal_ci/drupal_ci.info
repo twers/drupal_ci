@@ -30,6 +30,10 @@ dependencies[] = simpletest
 dependencies[] = views
 dependencies[] = devel
 
+; custom
+dependencies[] = home_view_feature
+dependencies[] = unit_test
+
 files[] = drupal_ci.profile
 
 ; Information added by drupal.org packaging script on 2012-02-01

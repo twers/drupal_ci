@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 3 ]; then
   echo "  Arguments: username password"
-  echo "  Example: ./autoinstall.sh admin pass"
+  echo "  Example: ./autoinstall.sh admin pass sitename"
   exit 1
 fi
 
 drush make profiles/drupal_ci/drupal_ci.make -y --no-core &&
-drush si drupal_ci -y --account-name=$1 --account-pass=$2 &&
+drush si drupal_ci -y --account-name=$1 --account-pass=$2 --site-name=$3 &&
 ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci

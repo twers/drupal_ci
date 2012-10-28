@@ -1,4 +1,4 @@
-name = Testing
+name = Unit Testing
 description = Provides a framework for unit and functional testing.
 core = 7.x
 
