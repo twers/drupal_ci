@@ -33,7 +33,7 @@ open http://localhost/drupal_ci
 Just run after pulling the code **(Step1)**
 
 ```
-./autoinstall.sh
+sudo ./autoinstall.sh admin 123
 ```
 
 ##Tips
