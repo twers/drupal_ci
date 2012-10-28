@@ -2,7 +2,13 @@ name = Drupal_CI
 description = Drupal CI
 version = VERSION
 core = 7.x
-dependencies[] = block
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = ckeditor
+dependencies[] = simpletest
+dependencies[] = views
+dependencies[] = devel
+
 files[] = drupal_ci.profile
 
 ; Information added by drupal.org packaging script on 2012-02-01
