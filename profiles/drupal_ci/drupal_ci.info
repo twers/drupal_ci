@@ -28,6 +28,7 @@ dependencies[] = features
 dependencies[] = ckeditor
 dependencies[] = simpletest
 dependencies[] = views
+dependencies[] = views_ui
 dependencies[] = devel
 
 ; custom
