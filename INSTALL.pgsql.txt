@@ -1,5 +1,5 @@
 
-CREATE THE PostgreSQL DATABASE 
+CREATE THE PostgreSQL DATABASE
 ------------------------------
 
 Note that the database must be created with UTF-8 (Unicode) encoding.
