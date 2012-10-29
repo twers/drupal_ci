@@ -15,7 +15,7 @@ The branch maintainers for Drupal 7 are:
 
 
 Component maintainers
----------------------
+--------------------- 
 
 The Drupal Core component maintainers oversee the development of Drupal
 subsystems. See http://drupal.org/contribute/core-maintainers for more
