@@ -1,5 +1,5 @@
 
-CREATE THE MySQL DATABASE
+CREATE THE MySQL DATABASE 
 --------------------------
 
 This step is only necessary if you don't already have a database set up (e.g.,
