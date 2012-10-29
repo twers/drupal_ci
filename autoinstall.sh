@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if [ $# -ne 3 ]; then
-  echo "  Arguments: username password"
-  echo "  Example: ./autoinstall.sh admin pass sitename"
+  echo "  Arguments: username password sitename"
+  echo "  Example: ./autoinstall.sh admin pass drupal_ci"
   exit 1
 fi
 
