@@ -5,6 +5,7 @@ function usage(){
   echo ""
   echo "Auto commands are:"
   echo "  install   Install Drupal site"
+  echo "  new       Create new feature from view"
 }
 
 function install(){
@@ -28,6 +29,20 @@ function install(){
   ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci
 }
 
+function new(){
+  if [ $# -ne 2 ]; then
+    echo "Invalid arguments. Use: auto new <feature_name> <view_name>"
+    exit 1
+  fi
+
+  featurename=$1
+  viewname=$2
+  echo "Create feature:$featurename from view:$viewname"
+  drush fe -y --destination=sites/all/modules/custom/ $featurename views_view:$viewname &&
+  drush en -y $featurename &&
+  drush vr $viewname
+}
+
 if [ $# -eq 0 ]; then
   usage
 else
@@ -35,6 +50,10 @@ else
     "install")
       shift
       install $@
+      ;;
+    "new")
+      shift
+      new $@
       ;;
     *)
       echo "'$1' is not a valid command."
