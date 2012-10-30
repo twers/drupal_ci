@@ -24,7 +24,7 @@ function install(){
   fi
   echo "Using account: $username:$password@$sitename"
   drush make profiles/drupal_ci/drupal_ci.make -y --no-core &&
-  drush si drupal_ci -y --account-name=$admin --account-pass=$password --site-name="$sitename" &&
+  drush si drupal_ci -y --account-name=$username --account-pass=$password --site-name="$sitename" &&
   ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci
 }
 
