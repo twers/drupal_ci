@@ -1,11 +1,13 @@
 #!/bin/sh
 
 function usage(){
-  echo "Usage"
-  echo ""
-  echo "Auto commands are:"
-  echo "  install   Install Drupal site"
-  echo "  new       Create new feature from view"
+  cat <<-EOF
+Usage
+
+Auto commands are:
+  install   Install Drupal site
+  new       Create new feature from view
+EOF
 }
 
 function install(){
