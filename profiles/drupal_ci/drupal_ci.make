@@ -21,4 +21,8 @@ projects[module_builder][version] = ""
 
 projects[examples][version] = ""
 
+projects[strongarm][version] = ""
+
+projects[feature_extra][version] = ""
+
 
