@@ -23,6 +23,6 @@ projects[examples][version] = ""
 
 projects[strongarm][version] = ""
 
-projects[feature_extra][version] = ""
+projects[features_extra][version] = ""
 
 
