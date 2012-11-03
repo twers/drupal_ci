@@ -14,6 +14,14 @@ function admin_feature_default_fe_block_settings() {
 
   // Theme independent visibility settings.
   $export['visibility'] = array(
+    'system-navigation' => array(
+      'delta' => 'navigation',
+      'module' => 'system',
+    ),
+    'user-login' => array(
+      'delta' => 'login',
+      'module' => 'user',
+    ),
     'views-latest_questions-block' => array(
       'delta' => 'latest_questions-block',
       'module' => 'views',
@@ -22,6 +30,34 @@ function admin_feature_default_fe_block_settings() {
 
   // bartik
   $theme = array();
+
+  $theme['system-navigation'] = array(
+    'module' => 'system',
+    'delta' => 'navigation',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
 
   $theme['views-latest_questions-block'] = array(
     'module' => 'views',
@@ -41,6 +77,34 @@ function admin_feature_default_fe_block_settings() {
 
   // seven
   $theme = array();
+
+  $theme['system-navigation'] = array(
+    'module' => 'system',
+    'delta' => 'navigation',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'seven',
+    'status' => '1',
+    'weight' => '10',
+    'region' => 'content',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
 
   $theme['views-latest_questions-block'] = array(
     'module' => 'views',
