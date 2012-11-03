@@ -9,7 +9,5 @@ dependencies[] = menu
 dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = views
-features[fe_block_settings][] = system-navigation
-features[fe_block_settings][] = user-login
 features[fe_block_settings][] = views-latest_questions-block
 features[features_api][] = api:1
