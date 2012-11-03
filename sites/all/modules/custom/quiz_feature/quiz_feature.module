@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the quiz feature feature.
+ */
+
+include_once 'quiz_feature.features.inc';
