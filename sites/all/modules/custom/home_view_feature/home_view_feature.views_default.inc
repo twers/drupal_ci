@@ -12,7 +12,7 @@ function home_view_feature_views_default_views() {
 
   $view = new view();
   $view->name = 'homepage_view';
-  $view->description = ''; 
+  $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'HomePage View';
@@ -68,7 +68,7 @@ function home_view_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'article' => 'article',
+    'page' => 'page',
   );
 
   /* Display: Page */

@@ -30,6 +30,7 @@ dependencies[] = simpletest
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = devel
+dependencies[] = devel_generate
 dependencies[] = strongarm
 dependencies[] = fe_block
 
