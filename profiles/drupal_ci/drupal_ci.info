@@ -36,6 +36,7 @@ dependencies[] = fe_block
 
 ; custom
 dependencies[] = home_view_feature
+dependencies[] = quiz_feature
 dependencies[] = unit_test
 
 files[] = drupal_ci.profile
