@@ -58,7 +58,7 @@ function drupal_ci_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'light');
   $admin_theme = 'seven';
   $blocks = array(
     array(
