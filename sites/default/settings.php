@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file
+ * @file 
  * Drupal site-specific configuration file.
  *
  * IMPORTANT NOTE:
