@@ -337,7 +337,7 @@ ini_set('session.cookie_lifetime', 2000000);
  * Remove the leading hash signs to enable.
  */
 $conf['site_name'] = 'Quiz Wall';
-$conf['theme_default'] = 'simple_style';
+# $conf['theme_default'] = 'simple_style';
 # $conf['anonymous'] = 'Visitor';
 
 /**
