@@ -7,9 +7,14 @@ core = 7.x
 
 stylesheets[all][] = css/layout.css
 ; stylesheets[all][] = css/style.css
-stylesheets[all][] = css/colors.css
+; stylesheets[all][] = css/colors.css
+
 stylesheets[all][] = library/bootstrap/css/bootstrap.min.css
+stylesheets[all][] = css/style_custom.css
 stylesheets[print][] = css/print.css
+
+
+scripts[] = library/bootstrap/js/bootstrap.min.js
 
 regions[header] = Header
 regions[help] = Help

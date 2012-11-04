@@ -89,11 +89,40 @@
 
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
+    <!--
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
     <?php endif; ?>
+    -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          <div class="nav-collapse collapse">
+            <?php print theme('links__system_main_menu', array(
+              'links' => $main_menu,
+              'attributes' => array(
+                'id' => 'main-menu-links',
+                'class' => array('links', 'clearfix', 'nav'),
+              ),
+              'heading' => array(
+                'text' => t('Main menu'),
+                'level' => 'h2',
+                'class' => array('element-invisible'),
+              ),
+            )); ?>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <?php if ($site_name || $site_slogan): ?>
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
