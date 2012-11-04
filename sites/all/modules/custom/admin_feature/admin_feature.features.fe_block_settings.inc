@@ -32,15 +32,15 @@ function admin_feature_default_fe_block_settings() {
     ),
   );
 
-  // light
+  // bartik
   $theme = array();
 
   $theme['search-form'] = array(
     'module' => 'search',
     'delta' => 'form',
-    'theme' => 'light',
+    'theme' => 'bartik',
     'status' => 0,
-    'weight' => '0',
+    'weight' => '-1',
     'region' => '',
     'custom' => '0',
     'visibility' => '0',
@@ -52,7 +52,7 @@ function admin_feature_default_fe_block_settings() {
   $theme['system-navigation'] = array(
     'module' => 'system',
     'delta' => 'navigation',
-    'theme' => 'light',
+    'theme' => 'bartik',
     'status' => 0,
     'weight' => '0',
     'region' => '',
@@ -66,7 +66,7 @@ function admin_feature_default_fe_block_settings() {
   $theme['user-login'] = array(
     'module' => 'user',
     'delta' => 'login',
-    'theme' => 'light',
+    'theme' => 'bartik',
     'status' => 0,
     'weight' => '0',
     'region' => '',
@@ -80,7 +80,7 @@ function admin_feature_default_fe_block_settings() {
   $theme['views-latest_questions-block'] = array(
     'module' => 'views',
     'delta' => 'latest_questions-block',
-    'theme' => 'light',
+    'theme' => 'bartik',
     'status' => 0,
     'weight' => '0',
     'region' => '',
@@ -91,7 +91,7 @@ function admin_feature_default_fe_block_settings() {
     'cache' => -1,
   );
 
-  $export['theme']['light'] = $theme;
+  $export['theme']['bartik'] = $theme;
 
   // seven
   $theme = array();
