@@ -1,9 +1,5 @@
 <?php
-/**
- * Implements hook_menu().
- */
-// function unit_test_simpletest() { 
-//   $dir = drupal_get_path('module', 'unit_test') .'/tests';
-//   $tests = file_scan_directory($dir, '\.test$');
-//   return array_keys($tests);
-// }
+
+function equal_method($a, $b) {
+	return $a == $b;
+}
