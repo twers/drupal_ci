@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file
+ * @file 
  * light's theme implementation to display a node.
  *
  * Available variables:
