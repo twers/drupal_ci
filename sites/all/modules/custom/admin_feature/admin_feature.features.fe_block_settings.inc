@@ -32,15 +32,15 @@ function admin_feature_default_fe_block_settings() {
     ),
   );
 
-  // bartik
+  // light
   $theme = array();
 
   $theme['search-form'] = array(
     'module' => 'search',
     'delta' => 'form',
-    'theme' => 'bartik',
+    'theme' => 'light',
     'status' => 0,
-    'weight' => '-1',
+    'weight' => '0',
     'region' => '',
     'custom' => '0',
     'visibility' => '0',
@@ -52,8 +52,8 @@ function admin_feature_default_fe_block_settings() {
   $theme['system-navigation'] = array(
     'module' => 'system',
     'delta' => 'navigation',
-    'theme' => 'bartik',
-    'status' => '1',
+    'theme' => 'light',
+    'status' => 0,
     'weight' => '0',
     'region' => '',
     'custom' => '0',
@@ -66,8 +66,8 @@ function admin_feature_default_fe_block_settings() {
   $theme['user-login'] = array(
     'module' => 'user',
     'delta' => 'login',
-    'theme' => 'bartik',
-    'status' => '1',
+    'theme' => 'light',
+    'status' => 0,
     'weight' => '0',
     'region' => '',
     'custom' => '0',
@@ -80,18 +80,18 @@ function admin_feature_default_fe_block_settings() {
   $theme['views-latest_questions-block'] = array(
     'module' => 'views',
     'delta' => 'latest_questions-block',
-    'theme' => 'bartik',
-    'status' => '1',
-    'weight' => '-7',
-    'region' => 'sidebar_second',
+    'theme' => 'light',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
     'custom' => '0',
-    'visibility' => '1',
-    'pages' => '<front>',
+    'visibility' => '0',
+    'pages' => '',
     'title' => '',
     'cache' => -1,
   );
 
-  $export['theme']['bartik'] = $theme;
+  $export['theme']['light'] = $theme;
 
   // seven
   $theme = array();
@@ -153,67 +153,6 @@ function admin_feature_default_fe_block_settings() {
   );
 
   $export['theme']['seven'] = $theme;
-
-  // stark
-  $theme = array();
-
-  $theme['search-form'] = array(
-    'module' => 'search',
-    'delta' => 'form',
-    'theme' => 'stark',
-    'status' => 0,
-    'weight' => '-1',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-  );
-
-  $theme['system-navigation'] = array(
-    'module' => 'system',
-    'delta' => 'navigation',
-    'theme' => 'stark',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-  );
-
-  $theme['user-login'] = array(
-    'module' => 'user',
-    'delta' => 'login',
-    'theme' => 'stark',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-  );
-
-  $theme['views-latest_questions-block'] = array(
-    'module' => 'views',
-    'delta' => 'latest_questions-block',
-    'theme' => 'stark',
-    'status' => '1',
-    'weight' => '-7',
-    'region' => 'sidebar_second',
-    'custom' => '0',
-    'visibility' => '1',
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-  );
-
-  $export['theme']['stark'] = $theme;
 
   $theme_default = variable_get('theme_default', 'garland');
   $themes = list_themes();
