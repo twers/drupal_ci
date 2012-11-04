@@ -20,7 +20,7 @@
 #sidebar-second {
   float: left;
   display: inline;
-  position: relative;
+  position: relative; 
 }
 
 #content {
