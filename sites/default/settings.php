@@ -206,7 +206,7 @@ $databases['default']['default'] = array(
   'username' => 'root',
   'password' => '',
   'host' => '127.0.0.1',
-  'prefix' => '',
+  'prefix' => '', 
 );
 /**
  * Access control for update.php script.
@@ -336,8 +336,8 @@ ini_set('session.cookie_lifetime', 2000000);
  * - anonymous: Defines the human-readable name of anonymous users.
  * Remove the leading hash signs to enable.
  */
-# $conf['site_name'] = 'My Drupal site';
-# $conf['theme_default'] = 'garland';
+$conf['site_name'] = 'Quiz Wall';
+$conf['theme_default'] = 'simple_style';
 # $conf['anonymous'] = 'Visitor';
 
 /**
