@@ -1,9 +1,39 @@
 body{
 	position: relative;
-	padding-top: 40px;
+	padding-top: 50px !important;
+}
+
+h2{
+	font-size: 20px;
+	border-bottom: 1px solid #999;
+}
+
+h3{
+	font-size: 16px;
+}
+
+.quiz-wall{
+	
 }
 
 .front #toolbar,
 .not-front #toolbar{
 	display: none !important;
+}
+
+.view-id-latest_questions .masonry-brick{
+	width: 200px;
+	background: #eee;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.view-id-latest_questions .quiz-card-title{
+	font-weight: bold;
+}
+
+.time{
+	font-size: 12px;
+	font-style: italic;
+	color: #888;	
 }
