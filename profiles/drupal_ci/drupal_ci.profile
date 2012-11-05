@@ -59,6 +59,8 @@ function drupal_ci_install() {
 
   // Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'light');
+  theme_enable(array('light'));
+  theme_disable(array('bartik'));
   $admin_theme = 'seven';
   $blocks = array(
     array(
