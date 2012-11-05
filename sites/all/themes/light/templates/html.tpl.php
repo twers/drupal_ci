@@ -52,7 +52,7 @@
     drupal_add_js(drupal_get_path('theme', 'light').'/library/jquery/jquery.min.js');
     drupal_add_js(drupal_get_path('theme', 'light').'/library/bootstrap/js/bootstrap.min.js');
   ?>
-  <?php // print $scripts; ?>
+  <!-- ?php print $scripts; ? -->
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
