@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function usage(){
+usage(){
   cat <<-EOF
 Usage
 
@@ -10,7 +10,7 @@ Auto commands are:
 EOF
 }
 
-function install(){
+install(){
   if ! which mysql > /dev/null; then
     echo "Warning: Can't find mysql command. Please ensure you have manually set up clean database."
   fi
@@ -28,10 +28,11 @@ function install(){
   echo "Using account: $username:$password@$sitename"
   drush make profiles/drupal_ci/drupal_ci.make -y --no-core &&
   drush si drupal_ci -y --account-name=$username --account-pass=$password --site-name="$sitename" &&
-  ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci
+  # ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci
+  git checkout sites/default/settings.php
 }
 
-function new(){
+new(){
   if [ $# -ne 2 ]; then
     echo "Invalid arguments. Use: auto new <feature_name> <view_name>"
     exit 1
@@ -45,13 +46,18 @@ function new(){
   drush vr $viewname
 }
 
+en_admin_feature(){
+  drush en admin_feature -y
+}
+
 if [ $# -eq 0 ]; then
   usage
 else
   case $1 in
     "install")
       shift
-      install $@
+      install $@ && 
+      en_admin_feature
       ;;
     "new")
       shift
