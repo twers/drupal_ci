@@ -90,6 +90,10 @@ function admin_feature_default_fe_block_settings() {
       'delta' => 'online',
       'module' => 'user',
     ),
+    'views-2b7ac13d6e7259d35a842083a8dbb9b1' => array(
+      'delta' => '2b7ac13d6e7259d35a842083a8dbb9b1',
+      'module' => 'views',
+    ),
     'views-latest_questions-block' => array(
       'delta' => 'latest_questions-block',
       'module' => 'views',
@@ -354,6 +358,20 @@ function admin_feature_default_fe_block_settings() {
   $theme['user-online'] = array(
     'module' => 'user',
     'delta' => 'online',
+    'theme' => 'light',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-2b7ac13d6e7259d35a842083a8dbb9b1'] = array(
+    'module' => 'views',
+    'delta' => '2b7ac13d6e7259d35a842083a8dbb9b1',
     'theme' => 'light',
     'status' => 0,
     'weight' => '0',
@@ -643,6 +661,20 @@ function admin_feature_default_fe_block_settings() {
     'status' => '1',
     'weight' => '0',
     'region' => 'dashboard_inactive',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-2b7ac13d6e7259d35a842083a8dbb9b1'] = array(
+    'module' => 'views',
+    'delta' => '2b7ac13d6e7259d35a842083a8dbb9b1',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
