@@ -38,6 +38,7 @@ dependencies[] = diff
 ; custom
 dependencies[] = home_view_feature
 dependencies[] = quiz_feature
+dependencies[] = member_feature
 ; dependencies[] = admin_feature
 dependencies[] = unit_test
 
