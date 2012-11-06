@@ -41,6 +41,9 @@ dependencies[] = quiz_feature
 ; dependencies[] = admin_feature
 dependencies[] = unit_test
 
+; pages
+dependencies[] = homepage_page
+
 files[] = drupal_ci.profile
 
 ; Information added by drupal.org packaging script on 2012-02-01

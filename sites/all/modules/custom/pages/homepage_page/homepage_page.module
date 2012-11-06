@@ -1,0 +1,27 @@
+<?php
+
+function homepage_page_menu(){
+	$items['homepage'] = array(
+    'title' => 'HomePage',
+		'page callback' => 'homepage_page_call',
+    'page arguments' => array(),
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'), 
+    'type' => MENU_CALLBACK,
+  );  
+  return $items;
+}
+
+function homepage_page_call(){
+	return theme('homepage_template');
+}
+
+function homepage_page_theme($existing, $type, $theme, $path){
+	$themes = array(
+    'homepage_template' => array()
+  );
+
+  return $themes;
+}
+
+?>

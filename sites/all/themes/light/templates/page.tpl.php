@@ -137,7 +137,6 @@
         </div>
       </div>
     </div>
-
     <?php print render($page['header']); ?>
 
   </div></div> <!-- /.section, /#header -->
