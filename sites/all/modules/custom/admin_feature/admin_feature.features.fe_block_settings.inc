@@ -388,7 +388,7 @@ function admin_feature_default_fe_block_settings() {
     'delta' => 'latest_questions-block',
     'theme' => 'light',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-11',
     'region' => 'sidebar_second',
     'custom' => '0',
     'visibility' => '1',

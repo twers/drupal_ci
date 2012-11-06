@@ -1,0 +1,9 @@
+name = Member Feature
+description = Member avatars
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = member_feature
+dependencies[] = fe_block
+features[fe_block_boxes][] = member
+features[features_api][] = api:1
