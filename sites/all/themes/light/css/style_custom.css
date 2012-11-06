@@ -1,6 +1,7 @@
 body{
 	position: relative;
 	padding-top: 50px !important;
+	background: url(../images/bg.png) fixed;
 }
 
 h2{
@@ -42,7 +43,7 @@ h3{
 
 .view-id-latest_questions .masonry-brick{
 	width: 200px;
-	background: #eee;
+	background: #fff;
 	padding: 10px;
 	margin-bottom: 10px;
 }
