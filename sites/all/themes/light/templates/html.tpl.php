@@ -48,16 +48,7 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <?php 
-    $js_arr = array('/library/jquery/jquery.min.js',
-      '/library/masonry/jquery.masonry.min.js',
-      '/library/bootstrap/js/bootstrap.min.js',
-      '/javascript/main.js');
-  ?>
-  <!--?php print $scripts; ?-->
-  <?php foreach($js_arr as $link) { ?>
-    <script type="text/javascript" src="<?php print drupal_get_path('theme', 'light').$link; ?>"></script>
-  <?php } ?>
+  <?php print $scripts; ?>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
