@@ -47,18 +47,13 @@ new(){
   drush vr $viewname
 }
 
-en_admin_feature(){
-  drush en admin_feature -y
-}
-
 if [ $# -eq 0 ]; then
   usage
 else
   case $1 in
     "install")
       shift
-      install $@ && 
-      en_admin_feature
+      install $@
       ;;
     "new")
       shift

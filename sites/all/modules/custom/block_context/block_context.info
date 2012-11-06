@@ -1,0 +1,13 @@
+name = block_context
+core = 7.x
+package = Features
+php = 5.2.4
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = home_quiz_block_context
+features[context][] = latest_questions_block_context
+features[context][] = member_block_context
+features[ctools][] = context:context:3
+features[features_api][] = api:1

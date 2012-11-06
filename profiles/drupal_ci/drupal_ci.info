@@ -34,13 +34,16 @@ dependencies[] = devel_generate
 dependencies[] = strongarm
 dependencies[] = fe_block
 dependencies[] = diff
+dependencies[] = context
+dependencies[] = context_ui
 
 ; custom
 dependencies[] = home_view_feature
 dependencies[] = quiz_feature
 dependencies[] = member_feature
-; dependencies[] = admin_feature
 dependencies[] = unit_test
+dependencies[] = block_context
+dependencies[] = admin_config
 
 ; pages
 dependencies[] = homepage_page
