@@ -30,6 +30,7 @@ install(){
   drush si drupal_ci -y --account-name=$username --account-pass=$password --site-name="$sitename" &&
   # ln -sfh `pwd` /Applications/XAMPP/xamppfiles/htdocs/drupal_ci
   git checkout sites/default/settings.php
+  drush genc 10 0 --types=quiz
 }
 
 new(){
