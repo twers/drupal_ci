@@ -37,6 +37,7 @@ dependencies[] = diff
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = contact 
+dependencies[] = smtp
 
 ; custom
 dependencies[] = home_view_feature
