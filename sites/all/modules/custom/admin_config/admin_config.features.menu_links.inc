@@ -29,7 +29,7 @@ function admin_config_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'contact',
     'router_path' => 'contact',
-    'link_title' => 'Contact Us',
+    'link_title' => 'Contact US',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -50,7 +50,7 @@ function admin_config_menu_default_menu_links() {
     'link_title' => 'HomePage View',
     'options' => array(),
     'module' => 'system',
-    'hidden' => '1',
+    'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -89,7 +89,7 @@ function admin_config_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Compose tips');
-  t('Contact Us');
+  t('Contact US');
   t('Home');
   t('HomePage View');
   t('User account');
