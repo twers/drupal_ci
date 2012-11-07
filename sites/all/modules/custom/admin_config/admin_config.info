@@ -12,6 +12,7 @@ features[features_api][] = api:1
 features[menu_custom][] = main-menu
 features[menu_custom][] = user-menu
 features[menu_links][] = main-menu:<front>
+features[menu_links][] = main-menu:contact
 features[menu_links][] = main-menu:home_view
 features[menu_links][] = navigation:filter/tips
 features[menu_links][] = user-menu:user
