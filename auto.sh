@@ -53,11 +53,11 @@ else
   case $1 in
     "install")
       shift
-      install $@
+      install "$@"
       ;;
     "new")
       shift
-      new $@
+      new "$@"
       ;;
     *)
       echo "'$1' is not a valid command."
