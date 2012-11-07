@@ -36,6 +36,7 @@ dependencies[] = fe_block
 dependencies[] = diff
 dependencies[] = context
 dependencies[] = context_ui
+dependencies[] = contact 
 
 ; custom
 dependencies[] = home_view_feature

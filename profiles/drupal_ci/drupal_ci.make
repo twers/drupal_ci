@@ -26,6 +26,7 @@ projects[strongarm][version] = ""
 projects[features_extra][version] = ""
 projects[diff][version] = ""
 projects[context][version] = ""
+projects[contact][version] = ""
 
 
 
