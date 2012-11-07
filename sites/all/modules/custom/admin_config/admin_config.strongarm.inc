@@ -42,7 +42,7 @@ function admin_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'qiuwang@thoughtworks.com';
+  $strongarm->value = 'jexchan@gmail.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
