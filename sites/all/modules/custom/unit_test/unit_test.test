@@ -28,7 +28,7 @@ class OneShouldEqualOneTestCase extends DrupalUnitTestCase {
   }
 
   public function testCI(){
-    $this->assertTrue(equal_method(1, 1));
+    $this->assertTrue(equal_method(1, 2));
   }
 
 }
